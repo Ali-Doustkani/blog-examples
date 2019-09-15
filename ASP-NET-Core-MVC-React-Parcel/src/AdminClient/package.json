@@ -1,0 +1,21 @@
+{
+  "name": "adminclient",
+  "version": "1.0.0",
+  "description": "the admin front-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "browserslist": [
+    "chrome > 55"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

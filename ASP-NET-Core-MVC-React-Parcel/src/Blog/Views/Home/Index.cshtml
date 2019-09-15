@@ -1,0 +1,45 @@
+@using Blog
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<Post>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <style>
+      section{
+        width: 600px;
+        margin: 0 auto;
+      }
+      .blog-container{
+        display: block;
+        background: #eee;
+        padding: 10px 20px;
+        font-size: 25px;
+        margin-bottom: 2px;
+        text-decoration: none;
+      }
+      span{
+        font-size: 15px;
+        background: #111;
+        color: white;
+        padding: 2px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Welcome to my blog!</h1>
+      @foreach(var post in Model)
+      {
+        <a asp-action="Post" asp-route-id="@post.Id" class="blog-container">
+          <div>@post.Title</div>
+          @foreach(var tag in post.GetTags())
+          {
+            <span>@tag</span>
+          }
+        </a>
+      }
+    </section>
+  </body>
+</html>

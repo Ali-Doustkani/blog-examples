@@ -1,0 +1,31 @@
+.item-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background: lightblue;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 20px;
+}
+
+li:hover {
+  background: lightskyblue;
+}
+
+li span {
+  background: lightslategrey;
+  margin-right: 3px;
+  font-size: 13px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: white;
+}
