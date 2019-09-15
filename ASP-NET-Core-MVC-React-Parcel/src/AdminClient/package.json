@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --out-dir ../Blog/wwwroot/admin"
   },
   "browserslist": [
     "chrome > 55"

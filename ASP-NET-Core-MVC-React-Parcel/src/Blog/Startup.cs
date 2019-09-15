@@ -11,7 +11,7 @@ namespace Blog
             services.AddMvc();
             services.AddSpaStaticFiles(spa =>
             {
-                spa.RootPath = "../AdminClient/dist";
+                spa.RootPath = "wwwroot/admin";
             });
         }
 
