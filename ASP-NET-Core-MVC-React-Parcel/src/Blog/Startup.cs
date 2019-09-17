@@ -21,13 +21,12 @@ namespace Blog
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseSpaStaticFiles();
+            app.UseMvcWithDefaultRoute();
             app.Map("/admin", adminApp =>
             {
                 adminApp.UseSpa(spa => { });
             });
-            app.UseMvcWithDefaultRoute();
         }
     }
 }

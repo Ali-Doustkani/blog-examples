@@ -5,7 +5,7 @@ import PostList from "./post-list/post-list";
 import { initial, reducer } from "./state";
 import { getPostItems, saveChanges, newPost } from "./services";
 
-const App = () => {
+const Main = () => {
   const [state, dispatch] = useReducer(reducer, initial);
 
   useEffect(() => {
@@ -31,4 +31,4 @@ const App = () => {
   ) : null;
 };
 
-export default App;
+export default Main;

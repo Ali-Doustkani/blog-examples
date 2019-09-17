@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Blog
+namespace Blog.Model
 {
     public class Post
     {

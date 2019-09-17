@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Blog
+namespace Blog.Model
 {
     public static class MemoryStore
     {
